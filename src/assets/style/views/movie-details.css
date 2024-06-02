@@ -1,18 +1,3 @@
-.movie-details .go-back-btn {
-    height: 5em;
-    display: flex;
-    align-items: center;
-}
-
-.movie-details .go-back-btn a {
-    margin: 2em;
-    padding: .5em 1em;
-    background-color: orangered;
-    color: antiquewhite;
-    font-weight: 500;
-    border-radius: 2em;
-}
-
 .movie-details .cover-photo {
     width: 100%;
     height: 15em;
@@ -29,7 +14,7 @@
 }
 
 .movie-details .movie-background {
-    padding: 0 2em;
+    padding: 0 2em 2em;
     display: flex;
     flex-wrap: wrap;
     gap: 3em;

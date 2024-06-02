@@ -6,10 +6,12 @@
 
 /* Views */
 @import 'views/home-page.css';
+@import 'views/movie-index.css';
 @import 'views/movie-details.css';
 
 
 /* Cmps */
 @import 'cmps/app-header.css';
-@import 'cmps/movies-list.css';
-@import 'cmps/movies-preview.css';
+@import 'cmps/movie-list.css';
+@import 'cmps/movie-preview.css';
+@import 'cmps/movie-filter.css';
