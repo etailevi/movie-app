@@ -1,3 +1,15 @@
 .movie-index {
     margin: auto;
 }
+
+.movie-index .control-panel {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 2em 2em 0 2em;
+}
+
+.movie-index h3 {
+    display: flex;
+    justify-content: center;
+}

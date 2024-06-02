@@ -3,13 +3,19 @@ import { utilService } from "./util.service"
 const MOVIE_KEY = 'movieDB'
 
 export const movieService = {
-    getMovies,
+    query,
     saveMovies,
-    getMovieById
+    getMovieById,
+    getDefaultFilter
 }
 
-function getMovies() {
-    return utilService.loadFromStorage(MOVIE_KEY)
+function query(filterBy = {}) {
+    let movies = utilService.loadFromStorage(MOVIE_KEY) || []
+    if (filterBy.title) {
+        const regExp = new RegExp(filterBy.title, 'i')
+        movies = movies.filter(movie => regExp.test(movie.title))
+    }
+    return movies
 }
 
 function saveMovies(movies) {
@@ -17,5 +23,11 @@ function saveMovies(movies) {
 }
 
 function getMovieById(movieId) {
-    return getMovies().find(movie => movie.id === movieId)
+    return query().find(movie => movie.id === movieId)
+}
+
+function getDefaultFilter() {
+    return {
+        title: '',
+    }
 }

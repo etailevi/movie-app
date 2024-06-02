@@ -40,3 +40,17 @@ button:hover {
     background-color: orangered;
     color: antiquewhite;
 }
+
+input,
+select {
+    padding: .75em 1em;
+    border: .05rem solid orangered;
+    color: orangered;
+    font-weight: 500;
+    border-radius: 2em;
+    outline: none;
+}
+
+input::placeholder {
+    color: orangered;
+}
