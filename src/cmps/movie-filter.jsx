@@ -14,7 +14,7 @@ export function MovieFilter({ filterBy, onSetFilter }) {
     const { title } = filterBy
     return (
         <div className='movie-filter'>
-            <input type="search" value={title} onChange={handleChange} placeholder='Filter by title' />
+            <input type="search" value={title} onChange={handleChange} placeholder='Filter By Title' />
         </div>
     )
 }
