@@ -1,0 +1,15 @@
+/* Setup */
+
+
+/* Base */
+@import 'base/base.css';
+
+/* Views */
+@import 'views/home-page.css';
+@import 'views/movie-details.css';
+
+
+/* Cmps */
+@import 'cmps/app-header.css';
+@import 'cmps/movies-list.css';
+@import 'cmps/movies-preview.css';

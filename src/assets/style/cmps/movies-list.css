@@ -1,0 +1,7 @@
+.movies-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 2em;
+}

@@ -1,0 +1,53 @@
+.movie-preview {
+    height: 15em;
+    width: 12em;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.movie-preview:hover {
+    scale: 1.1;
+}
+
+.movie-preview a {
+    width: 100%;
+    height: 100%;
+}
+
+.movie-preview:hover .backdrop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000000b4;
+    z-index: -1;
+}
+
+.movie-preview .movie-info {
+    display: none;
+}
+
+.movie-preview:hover .movie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: .5em;
+    color: aliceblue;
+}
+
+.movie-preview .movie-info h3 {
+    text-shadow: 1px 1px 1px #313131, 3px 3px 5px #313131;
+    margin: 0;
+}
+
+.movie-preview .movie-info p {
+    margin: 0;
+    font-size: .75rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
