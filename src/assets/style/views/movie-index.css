@@ -27,3 +27,15 @@
     color: orangered;
     padding-inline-start: .25em;
 }
+
+.movie-index .page-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.movie-index .page-section button {
+    border-radius: 50%;
+    margin: 1em;
+}
