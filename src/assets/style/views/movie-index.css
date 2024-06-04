@@ -9,7 +9,21 @@
     padding: 2em 2em 0 2em;
 }
 
-.movie-index h3 {
+.movie-index>h3 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 5em;
+}
+
+.movie-index .error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-index .error a {
+    text-decoration: underline;
+    color: orangered;
+    padding-inline-start: .25em;
 }
