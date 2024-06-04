@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 
 import { movieService } from '../services/movie.service'
 
 export function MovieDetails() {
     const { movieId } = useParams()
-    const movie = movieService.getMovieById(parseInt(movieId))
+    const movie = movieService.getMovieById(+(movieId))
+
     return (
         <section
             className='movie-details'
